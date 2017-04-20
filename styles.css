@@ -56,12 +56,12 @@ body{
 /* Section Flo */
 .welcome {
 	height:100vh;
-	background-color: beige;
+	/*background-color: beige;*/
 }
 .partial-wel {
 	padding-right: 0 !important;
 	padding-left: 0 !important;
-	background-color: brown;
+	/*background-color: brown;*/
 	height: 50vh;
 	width: 100vh;
 }
@@ -71,12 +71,18 @@ body{
 	height: 10vh;
 }
 .text1 {
-	background-color: grey;
+	/*background-color: grey;*/
 	height: 40vh;
+	padding-top: 5vh;
 }
 .text2 {
-	background-color: maroon;
+	/*background-color: maroon;*/
 	height: 40vh;
+	padding-top: 5vh;
+}
+.text2::after {
+	content: 'Bonne visite';
+	float: right;
 }
 .gallery {
 	margin-top: 57.5vh;
@@ -84,7 +90,30 @@ body{
 .w-photo {
 	height: 20vh;
 	width: auto;
-	background-color: cyan;
+}
+.test_img1 {
+	background-image: url(elements/test_img/1.jpg);
+}
+.test_img2 {
+	background-image: url(elements/test_img/2.jpg);
+}
+.test_img3 {
+	background-image: url(elements/test_img/3.jpg);
+}
+.test_img4 {
+	background-image: url(elements/test_img/4.jpg);
+}
+.test_img5 {
+	background-image: url(elements/test_img/5.jpg);
+}
+.test_img6 {
+	background-image: url(elements/test_img/6.jpg);
+}
+.test_img7 {
+	background-image: url(elements/test_img/7.jpg);
+}
+.test_img8 {
+	background-image: url(elements/test_img/8.jpg);
 }
 
 #screen2{
