@@ -73,22 +73,21 @@ body{
 	margin-top: 5vh;
 	padding-top: 1.5vh;
 }
-.title_wel {
+.title_wel, .title_bio {
 	color: darkcyan;
 	font-family: 'AquilineTwo';
 }
-.title h2 {
+.openlife {
 	padding-left: 10vw;
 }
-.title_wel::after {
-	content: 'laissez entrer le soleil !';
-	padding-bottom: 0vh;
+.title_sun {
+    margin-top: -2vh;
 	padding-right: 12vw;
 	font-size: 30px;
 	float: right;
 	color: orange;
 }
-.text1 p, .text2 p {
+.text1 p, .text2 p, .text_bio p {
 	font-size: 17px;
 }
 .text1 {
@@ -99,8 +98,7 @@ body{
 	height: 40vh;
 	padding-top: 5vh;
 }
-.text2::after {
-	content: 'Bonne visite';
+.bye {
 	padding-top: 5vh;
 	font-size: 17px;
 	float: right;
@@ -113,7 +111,26 @@ body{
 	width: auto;
 }
 /* --- Section Bio --- */
-
+.whoiam {
+	font-size: 40px;
+}
+.title_bio {
+	padding-bottom: 12vh;
+}
+.photo_bio {
+	background-image: url(elements/img/box_img.jpg);
+	height: 30vh;
+    width: auto;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.text_bio {
+	text-align: justify;
+}
+.bio1 {
+	text-indent: 5vh;
+}
 
 .test_img1 {
 	background-image: url(elements/test_img/1.jpg);
