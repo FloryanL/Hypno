@@ -1,3 +1,8 @@
+@font-face {
+	font-family: 'AquilineTwo';
+	src: url('elements/font/AquilineTwo.ttf') format('truetype');
+}
+
 body{
 	margin:0;
 }
@@ -53,26 +58,32 @@ body{
 }
 
 /* Section Flo */
-.welcome {
+/* --- Section Welcome --- */
+.welcome, .biography {
 	height:100vh;
-	/*background-color: beige;*/
 }
-.partial-wel {
+.partial-wel, .partial-bio {
 	padding-right: 0 !important;
 	padding-left: 0 !important;
-	/*background-color: brown;*/
 	height: 50vh;
 	width: 100vh;
 }
 .title {
+	height: 10vh;
 	margin-top: 5vh;
 	padding-top: 1.5vh;
-	height: 10vh;
-	color: darkcyan;
 }
-.title::after {
+.title_wel {
+	color: darkcyan;
+	font-family: 'AquilineTwo';
+}
+.title h2 {
+	padding-left: 10vw;
+}
+.title_wel::after {
 	content: 'laissez entrer le soleil !';
-	padding-top: 0.2vh;
+	padding-bottom: 0vh;
+	padding-right: 12vw;
 	font-size: 30px;
 	float: right;
 	color: orange;
@@ -81,12 +92,10 @@ body{
 	font-size: 17px;
 }
 .text1 {
-	/*background-color: grey;*/
 	height: 40vh;
 	padding-top: 5vh;
 }
 .text2 {
-	/*background-color: maroon;*/
 	height: 40vh;
 	padding-top: 5vh;
 }
@@ -103,6 +112,9 @@ body{
 	height: 20vh;
 	width: auto;
 }
+/* --- Section Bio --- */
+
+
 .test_img1 {
 	background-image: url(elements/test_img/1.jpg);
 }
