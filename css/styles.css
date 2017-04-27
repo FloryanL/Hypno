@@ -426,13 +426,9 @@ a:hover{
 .twitter{background-image: url(../img/icones/twitter.png);}
 .fcbook{background-image: url(../img/icones/fbook.png);}
 
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 	.title_wel {
 		margin-bottom: 45px;
 	}
-	.gallery {
-    	margin-top: 550px;
-	}
 }
-
-
