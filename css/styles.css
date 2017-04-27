@@ -141,7 +141,7 @@ a:hover{
 	color: #22B8F0;
 }
 .title_wel, .title_bio {
-	color: darkcyan;
+	color: #22B8F0;
 	font-family: 'Rundkursiv';
 }
 .openlife {
@@ -152,7 +152,7 @@ a:hover{
 	padding-right: 12vw;
 	font-size: 30px;
 	float: right;
-	color: orange;
+	color: #FFC600;
 }
 .titreSection span{
 	float: right;
@@ -265,7 +265,7 @@ a:hover{
   opacity: 1;
 }
 .close:hover{
-  color: black
+  color: black;
   filter: alpha(opacity=60);
    opacity: .6;
 }
