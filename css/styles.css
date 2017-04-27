@@ -265,7 +265,7 @@ a:hover{
   opacity: 1;
 }
 .close:hover{
-  color: black;
+  color: black
   filter: alpha(opacity=60);
    opacity: .6;
 }
