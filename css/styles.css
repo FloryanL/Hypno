@@ -131,11 +131,28 @@ a:hover{
 .welcome, .biography, .blog, .contact {
 	padding: 60px 0 40px 0;
 }
+.partial-wel {
+	height: 450px;
+}
 .titreSection{
 	margin: 30px 0;
 	font-family: 'Rundkursiv';
 	font-size: 52px;
 	color: #22B8F0;
+}
+.title_wel, .title_bio {
+	color: darkcyan;
+	font-family: 'Rundkursiv';
+}
+.openlife {
+	padding-left: 10vw;
+}
+.title_sun {
+    margin-top: -2vh;
+	padding-right: 12vw;
+	font-size: 30px;
+	float: right;
+	color: orange;
 }
 .titreSection span{
 	float: right;
@@ -146,6 +163,11 @@ a:hover{
 	font-family: 'Rundkursiv';
 	font-size: 24px;
 	color: #506167;
+}
+.bye {
+	padding-top: 5vh;
+	font-size: 17px;
+	float: right;
 }
 .test_img1 {
 	background-image: url(../img/1.jpg);
@@ -243,7 +265,7 @@ a:hover{
   opacity: 1;
 }
 .close:hover{
-  color: black
+  color: black;
   filter: alpha(opacity=60);
    opacity: .6;
 }
