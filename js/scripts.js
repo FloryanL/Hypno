@@ -1,5 +1,15 @@
 $(document).ready(function(){
 
+    $('a[href^="#"]').click(function(){
+        var the_id = $(this).attr("href");
+
+    $('html, body').animate({
+        scrollTop:$(the_id).offset().top
+        }, 'slow');
+        return false;
+    });
+
+
 	//afficher masquer lightbox pourquoi?
 
     $("#btnPourquoi").click(function(){
@@ -33,11 +43,11 @@ $(document).ready(function(){
     //afficher masquer lightbox horaires et tarifs
 
     $("#btnHorairesTarif").click(function(){
-        $(".horairesTarif").fadeIn();
+        $(".horairesTarifs").fadeIn();
     });
 
     $(".closeHorairesTarif").click(function(){
-        $(".horairesTarif").fadeOut();
+        $(".horairesTarifs").fadeOut();
     });
 
 });
