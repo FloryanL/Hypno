@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    // scroll fluid
+
     $('a[href^="#"]').click(function(){
         var the_id = $(this).attr("href");
 
