@@ -289,6 +289,15 @@ a:hover{
 
 /* ============================
    ========  H tarifs  ======== */
+   .tarifs, .horaires{
+   	height: auto;
+   	padding: 60px 10px 10px 10px;
+   	background-repeat: no-repeat;
+   	background-size: 60px;
+   	background-position: 10px top;
+   }
+   .tarifs{background-image: url(../img/icones/paymente.png);}
+   .horaires{background-image: url(../img/icones/calendar.png);}
 
 
 /* ============================
