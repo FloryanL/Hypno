@@ -106,18 +106,31 @@ a:hover{
 	text-transform: uppercase;
 	margin: 0 auto;	
 }
-.baseline{
-	font-size: 18px;
-}
+
 .citation{
 	text-shadow: none;
 	font-size: 21px;
 	height: auto;
 	width: 100%;
-	padding: 30px 0 20px 0;
+	padding: 30px;
 	margin: 0;
-	bottom: 0!important;
+	bottom: 20px!important;
 	position: absolute;
+	background-image: url(../img/icones/citation.png), url(../img/icones/citation.png);
+	background-size: 30px;
+	background-repeat: no-repeat, no-repeat;
+	background-position: 30% top, 70% bottom;
+}
+.citation p{
+	width: 40%;
+	font-size: 16px;
+	background-color: rgba(0,0,0,.4);
+	margin: auto;
+	padding: 20px 20px 0 20px;
+}
+.citation p span{
+	color: #FA6E4E;
+	line-height: 50px;
 }
 
 /*.filter {
@@ -460,4 +473,19 @@ a:hover{
 .fcbook{background-image: url(../img/icones/fbook.png);}
 
 
-
+@media screen and (max-width: 480px){
+	.accueil h1{
+		margin-top: 120px;
+		font-size: 46px;
+	}
+	.citation{
+		display: none;
+	}
+	.baseline{
+		font-size: 14px;
+	}
+	.accroche{
+		font-size: 32px;
+		margin-top: 30px;	
+	}
+}
