@@ -21,8 +21,6 @@
 
 /*  Bleu : #22B8F0   /   Orange : #FFC600   /   Gris : #506167  */
 
-
-
 body{
 	font-family: 'Lato-Light';
 	height: 100%;
@@ -52,7 +50,6 @@ a:hover{
     padding-left: 0;
 }
 
-
 /* =============================
    ========  navigation  ======= */
 
@@ -71,7 +68,6 @@ a:hover{
 	color: #4CBAED;
 }
 .navbar-brand img{}
-
 
 /* ============================
    ========  accueil  ========= */
@@ -124,15 +120,15 @@ a:hover{
 	position: absolute;
 }
 
-.filter {
+/*.filter {
   position: relative;
   -webkit-filter: saturate(118%) sepia(58%) hue-rotate(182deg);
   filter: saturate(118%) sepia(58%) hue-rotate(182deg);
-}
+}*/
 /* ============================
    ========  Bienvenue  ======= */
 
-.welcome, .biography, .blog, .contact {
+.welcome, .biography, .horairesTarifs, .blog, .contact {
 	padding: 60px 0 40px 0;
 }
 .partial-wel {
@@ -274,7 +270,6 @@ a:hover{
    opacity: .6;
 }
 
-
 /* ============================
    ========  pourquoi  ======== */
 
@@ -289,16 +284,43 @@ a:hover{
 
 /* ============================
    ========  H tarifs  ======== */
-   .tarifs, .horaires{
-   	height: auto;
-   	padding: 60px 10px 10px 10px;
+
+.horairesTarifs{
+	height: auto;
+}
+.tarifs, .horaires{
+   	padding: 0 10px 0 0;
+
+}
+.titreTarifs, .titreHoraires{
+	font-family: 'Lato-Bold';
+	text-transform: uppercase;
+	font-size: 23px;
+	height: 100px;
+   	padding: 10px 0 10px 90px;
    	background-repeat: no-repeat;
    	background-size: 60px;
-   	background-position: 10px top;
-   }
-   .tarifs{background-image: url(../img/icones/paymente.png);}
-   .horaires{background-image: url(../img/icones/calendar.png);}
-
+   	background-position: 20px;
+   	line-height: 80px;
+   	background-color: #C5C5C5;
+   	border: 1px solid #C5C5C5;
+}
+.titreTarifs{
+	background-image: url(../img/icones/service.png);
+}
+.titreHoraires{
+	background-image: url(../img/icones/clock.png);
+}
+.horairesTarifs p{
+	font-size: 21px;
+	text-align: left;
+	background-color: #EFEFEF;
+	padding: 10px;
+	border: 1px solid #C5C5C5;
+}
+.horairesTarifs p span{
+	font-family: 'Lato-Bold';
+}
 
 /* ============================
    ========  Blog  ============ */
@@ -326,7 +348,7 @@ a:hover{
 	height: 40px;
 	width: auto;
 }
-.dateShare  *{
+.dateShare *{
 	display: inline-block;
 }
 .datePost{
@@ -379,13 +401,11 @@ a:hover{
 .vignettes a{
 	color: black;
 }
-
 .lienPost p{
 	font-size: 14px;
 }
 .lienPost span{
 }
-
 
 /* ============================
    ========  contact  ========= */
