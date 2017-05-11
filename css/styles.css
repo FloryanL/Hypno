@@ -21,8 +21,6 @@
 
 /*  Bleu : #22B8F0   /   Orange : #FFC600   /   Gris : #506167  */
 
-
-
 body{
 	font-family: 'Lato-Light';
 	height: 100%;
@@ -52,7 +50,6 @@ a:hover{
     padding-left: 0;
 }
 
-
 /* =============================
    ========  navigation  ======= */
 
@@ -71,7 +68,6 @@ a:hover{
 	color: #4CBAED;
 }
 .navbar-brand img{}
-
 
 /* ============================
    ========  accueil  ========= */
@@ -110,25 +106,42 @@ a:hover{
 	text-transform: uppercase;
 	margin: 0 auto;	
 }
-.baseline{
-	font-size: 18px;
-}
+
 .citation{
 	text-shadow: none;
 	font-size: 21px;
 	height: auto;
 	width: 100%;
-	padding: 30px 0 20px 0;
+	padding: 30px;
 	margin: 0;
-	bottom: 0!important;
+	bottom: 20px!important;
 	position: absolute;
+	background-image: url(../img/icones/citation.png), url(../img/icones/citation.png);
+	background-size: 30px;
+	background-repeat: no-repeat, no-repeat;
+	background-position: 30% top, 70% bottom;
+}
+.citation p{
+	width: 40%;
+	font-size: 16px;
+	background-color: rgba(0,0,0,.4);
+	margin: auto;
+	padding: 20px 20px 0 20px;
+}
+.citation p span{
+	color: #FA6E4E;
+	line-height: 50px;
 }
 
-
+/*.filter {
+  position: relative;
+  -webkit-filter: saturate(118%) sepia(58%) hue-rotate(182deg);
+  filter: saturate(118%) sepia(58%) hue-rotate(182deg);
+}*/
 /* ============================
    ========  Bienvenue  ======= */
 
-.welcome, .biography, .blog, .contact {
+.welcome, .biography, .horairesTarifs, .blog, .contact {
 	padding: 60px 0 40px 0;
 }
 .partial-wel {
@@ -292,7 +305,6 @@ a:hover{
    opacity: .6;
 }
 
-
 /* ============================
    ========  pourquoi  ======== */
 
@@ -308,6 +320,42 @@ a:hover{
 /* ============================
    ========  H tarifs  ======== */
 
+.horairesTarifs{
+	height: auto;
+}
+.tarifs, .horaires{
+   	padding: 0 10px 0 0;
+
+}
+.titreTarifs, .titreHoraires{
+	font-family: 'Lato-Bold';
+	text-transform: uppercase;
+	font-size: 23px;
+	height: 100px;
+   	padding: 10px 0 10px 90px;
+   	background-repeat: no-repeat;
+   	background-size: 60px;
+   	background-position: 20px;
+   	line-height: 80px;
+   	background-color: #C5C5C5;
+   	border: 1px solid #C5C5C5;
+}
+.titreTarifs{
+	background-image: url(../img/icones/service.png);
+}
+.titreHoraires{
+	background-image: url(../img/icones/clock.png);
+}
+.horairesTarifs p{
+	font-size: 21px;
+	text-align: left;
+	background-color: #EFEFEF;
+	padding: 10px;
+	border: 1px solid #C5C5C5;
+}
+.horairesTarifs p span{
+	font-family: 'Lato-Bold';
+}
 
 /* ============================
    ========  Blog  ============ */
@@ -335,7 +383,7 @@ a:hover{
 	height: 40px;
 	width: auto;
 }
-.dateShare  *{
+.dateShare *{
 	display: inline-block;
 }
 .datePost{
@@ -388,13 +436,11 @@ a:hover{
 .vignettes a{
 	color: black;
 }
-
 .lienPost p{
 	font-size: 14px;
 }
 .lienPost span{
 }
-
 
 /* ============================
    ========  contact  ========= */
@@ -449,8 +495,19 @@ a:hover{
 .fcbook{background-image: url(../img/icones/fbook.png);}
 
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-	.title_wel {
-		margin-bottom: 45px;
+@media screen and (max-width: 480px){
+	.accueil h1{
+		margin-top: 120px;
+		font-size: 46px;
+	}
+	.citation{
+		display: none;
+	}
+	.baseline{
+		font-size: 14px;
+	}
+	.accroche{
+		font-size: 32px;
+		margin-top: 30px;	
 	}
 }
