@@ -18,7 +18,7 @@
   font-family: 'Rundkursiv';
   src: url('../fonts/Rundkursiv.ttf');
 }
-
+@grid-float-breakpoint
 /*  Bleu : #22B8F0   /   Orange : #FFC600   /   Gris : #506167  */
 
 body{
@@ -61,7 +61,9 @@ a:hover{
 	box-shadow: 1px 1px 5px 0px rgba(0,0,0,0.75);
 }
 .navbar-default .navbar-nav > li > a{
-	font-size: 1.3vw;
+	font-family: 'Lato-Light';
+	font-size: 16px;
+	text-transform: uppercase;
 	color: #333333;
 }
 .navbar-default .navbar-nav > li > a:hover{
@@ -122,14 +124,15 @@ a:hover{
 	background-position: 30% top, 70% bottom;
 }
 .citation p{
-	width: 40%;
+	width: 46%;
 	font-size: 16px;
 	background-color: rgba(0,0,0,.4);
 	margin: auto;
-	padding: 20px 20px 0 20px;
+	padding: 20px 20px 0 20px;	
+	border: 1px solid rgba(252,198,45,.3);
 }
 .citation p span{
-	color: #FA6E4E;
+	color: rgb(252,198,45);
 	line-height: 50px;
 }
 
@@ -309,30 +312,36 @@ a:hover{
 	font-family: 'Lato-Bold';
 	text-transform: uppercase;
 	font-size: 23px;
-	height: 100px;
+	height: 90px;
    	padding: 10px 0 10px 90px;
    	background-repeat: no-repeat;
    	background-size: 60px;
    	background-position: 20px;
-   	line-height: 80px;
-   	background-color: #C5C5C5;
-   	border: 1px solid #C5C5C5;
+   	line-height: 70px;
+   	color: #fff;
 }
 .titreTarifs{
-	background-image: url(../img/icones/service.png);
+	background-image: url(../img/icones/coins.png);
+	background-color: rgba(240,75,134,.7);
 }
 .titreHoraires{
-	background-image: url(../img/icones/clock.png);
+	background-image: url(../img/icones/hourglass.png);
+	background-color: rgba(0,170,156,.7);
 }
 .horairesTarifs p{
-	font-size: 21px;
+	font-size: 19px;
 	text-align: left;
 	background-color: #EFEFEF;
-	padding: 10px;
-	border: 1px solid #C5C5C5;
+	padding: 10px 10px 10px 30px;
+}
+.horaires p{
+	background-color: rgba(0,170,156,.08);
+}
+.tarifs p{
+	background-color: rgba(240,75,134,.08);
 }
 .horairesTarifs p span{
-	font-family: 'Lato-Bold';
+	font-family: 'Lato-Regular';
 }
 
 /* ============================
@@ -489,3 +498,13 @@ a:hover{
 		margin-top: 30px;	
 	}
 }
+/*navbar */
+@media all and (min-width: 768px) and (max-width: 1280px){
+	.navbar-default .navbar-nav > li > a{
+		font-family: 'Lato-Bold';
+		font-size: 12px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
