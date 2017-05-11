@@ -157,7 +157,7 @@ a:hover{
 	color: #22B8F0;
 }
 .title_wel, .title_bio {
-	color: darkcyan;
+	color: #22B8F0;
 	font-family: 'Rundkursiv';
 }
 .openlife {
@@ -168,7 +168,7 @@ a:hover{
 	padding-right: 12vw;
 	font-size: 30px;
 	float: right;
-	color: orange;
+	color: #FFC600;
 }
 .titreSection span{
 	float: right;
@@ -213,6 +213,28 @@ a:hover{
 	height: 220px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding: 0;
+}
+.test_img1:hover .testhover p {
+	cursor: pointer;
+	display: block;
+	opacity: 0.5;
+	background-color: gray;
+	height: 220px;
+	
+}
+.testhover p:hover {
+
+}
+.testhover p {
+	font-size: 20px;
+	color: rgba(255,255,255,1);
+	display: none;
+	height: 0;
+	width: 100%;
+	padding: 10px;
+	-webkit-transition: height 2s; /* For Safari 3.1 to 6.0 */
+    transition: height 2s;
 }
 .gallery {
 	width: 100%;
